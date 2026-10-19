@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Events Guide</title >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <b>Campus Events Guide</b>
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="Event.html">Events</a> |
+                <a href="Event_Detail.html">Details</a> |
+                <a href="Schedule.html">Schedule</a> |
+                <a href="Registration.html">Register</a>
+            </nav>
+            <input type="radio" id="light" name="theme_preference" value="light" checked>
+            <label for="light">Light</label>
+
+            <input type="radio" id="dark" name="theme_preference" value="dark">
+            <label for="dark">Dark</label>
+        </div>
+        <hr>
+    </header>
+    <main>
+    <h1>Registration: Career Fair day!</h1>
+    <p>Please fill out the form below to register for the career fair:</p>
+    <h3>Date: October 24, 2026 | 9:00 AM- 4:00 PM | Location: Palm Area</h3>
+    <div>
+        <h2>Registration Form</h2>
+        <ol>
+            <li>Name: <input type="text" name="name" required></li>
+            <li>Email: <input type="email" name="email" required></li>
+            <li>Phone: <input type="tel" name="phone" required></li>
+            <li>ID: <input type="number" name="id" required></li>
+            <li>Portfolio: <input type="url" name="portfolio"></li>
+            <li>excitement: <input type="range" name="excitement" min="1" max="5"></li>
+            <li>Registration Date: <input type="date" name="date"></li>
+            <li>Expected arrival time: <input type="time" name="arrival_time"></li>
+            <li>Upload National ID: <input type="file" name="upload" required></li>
+            <li>Terms and Conditions: <input type="checkbox" name="terms" required></li>
+            <li>Status: <input type="radio" name="status" value="Student" required> Student
+                <input type="radio" name="status" value="Graduate"> Graduate
+                <input type="radio" name="status" value="Employee"> Employee
+            </li>
+            <li>Major: <select name="major">
+                <option value="AI">AI</option>
+                <option value="Software Development">Software Development</option>
+                <option value="IT">IT</option>
+            </select></li>
+            <li>Expected Companies: <textarea name="companies"></textarea></li>
+        </ol>
+        <input type="submit" value="Submit">
+    </div>
+    </main>
+    <footer>
+        <hr>
+        <h1>Contact Info</h1>
+        <small>
+            Email: <a href="mailto:support@zewailcity.edu.eg">Our Support Team</a> |
+            Phone: +011 339 942 09
+        </small>
+    </footer>
+</body>
+</html>
